@@ -3,7 +3,6 @@
 %Trường Đại học Khoa học Tự nhiên, ĐHQG-HCM
 
 %Liên hệ về mẫu LaTEX này: Thầy Bùi Huy Thông (bhthong@fit.hcmus.edu.vn)
-
 \documentclass{article}[14pt]
 \usepackage[utf8]{vietnam}
 \usepackage{enumerate}
@@ -21,7 +20,6 @@
 \usepackage{floatrow}
 \usepackage{floatrow}
 \pagenumbering{arabic}
-%\pagestyle{fancy}
 \newfloatcommand{capbtabbox}{table}[][\FBwidth]
 
 \usepackage{blindtext}
@@ -31,8 +29,8 @@
 \titleformat*{\section}{\LARGE\bfseries}
 \titleformat*{\subsection}{\Large\bfseries}
 \titleformat*{\subsubsection}{\large\bfseries}
-%\addbibresource{ref.bib}
-
+\setlength\parindent{0pt}
+\setlength{\parskip}{5pt}
 
 \begin{document}
     \begin{figure}[h]
@@ -53,21 +51,13 @@
     \end{figure}
     
     \begin{center}
-        
-        %Xác định loại đề tài tốt nghiệp tương ứng: Khóa luận, Thực tập, Đồ án
         \textbf{\huge ĐỀ CƯƠNG KHOÁ LUẬN TỐT NGHIỆP} \\ 
     \end{center}
     
-    %\vspace{.5cm}
-    
-    \begin{center}
-    %Tên đề tài phải VIẾT HOA
-        
-        \textbf{\Large HỆ THỐNG DANH TIẾNG PHỤC VỤ XÁC THỰC HỒ SƠ VÀ ĐÁNH GIÁ KỸ NĂNG} 
-        \\
-        
-    %Tên đề tài bằng tiếng Anh (nếu có)
-    \vspace{.5cm}
+    \begin{center}   
+        \textbf{\Large HỆ THỐNG DANH TIẾNG PHỤC VỤ XÁC THỰC HỒ SƠ VÀ ĐÁNH GIÁ KỸ NĂNG} \\
+        \vspace{.5cm}
+
         \textbf{\Large (Reputation system for résumé verification and skill assessment)}
     \end{center}
     
@@ -78,25 +68,20 @@
     \begin{itemize}[label = {}]
         
         \item \textbf{Giảng viên hướng dẫn:} 
-        %Thể hiện dạng: <Chức danh> <Họ và tên> (<Đơn vị công tác>)
         \begin{itemize}
             PGS.TS. Nguyễn Đình Thúc (Trưởng Bộ môn Công nghệ tri thức)
         \end{itemize}{}
     
         
         \item \textbf{Nhóm sinh viên thực hiện:}
-        
-        %Thể hiện dạng: <Họ và tên sinh viên> (MSSV: )
         \begin{enumerate}
             \item Nguyễn Hải Tuyên (MSSV: 21127474) 
             \item Trần Minh Đạt (MSSV: 21127570)
         \end{enumerate}
 
-       %Chọn loại thích hợp
         \item \textbf{Loại đề tài:} Ứng dụng
         
         \item \textbf{Thời gian thực hiện:} Từ 3/2025 đến 8/2025
-        
         
     \end{itemize}
     
@@ -104,29 +89,82 @@
     
     \section{NỘI DUNG THỰC HIỆN}
     {
-
-    %Mỗi mục dưới đây phải viết ít nhất là 5 câu mô tả/giới thiệu.
-    
+        
     \subsection{Giới thiệu về đề tài}
     
-    Phần này giới thiệu tóm tắt về đề tài và ngữ cảnh thực hiện (Nêu vấn đề, ý tưởng giải quyết, phương pháp giải quyết và ý nghĩa thực tiễn của vấn đề)
-    
-    %\textbf{Ghi chú:} Cần đăng ký tài khoản trên Overleaf\footnote{https://www.overleaf.com} và đọc cách sử dụng LaTeX tại hướng dẫn này \footnote{https://www.overleaf.com/learn/latex/Learn\_LaTeX\_in\_30\_minutes}% \cite{overleaf}.
+    Trong lĩnh vực Công nghệ thông tin, việc xác thực trình độ học vấn, kỹ năng và kinh nghiệm của một cá nhân vẫn còn gặp nhiều khó khăn. 
+    Hiện nay, các nhà tuyển dụng và doanh nghiệp thường dựa vào chứng chỉ, bằng cấp hoặc thông tin do ứng viên cung cấp để đánh giá năng lực. 
+    Tuy nhiên, những thông tin này \textbf{có thể bị làm giả} hoặc không phản ánh chính xác thực lực của ứng viên.
+
+    Bên cạnh đó, nhiều cá nhân có kỹ năng thực tế nhưng lại không có cách nào để chứng minh năng lực của mình ngoài những hồ sơ truyền thống. 
+    Điều này làm hạn chế cơ hội phát triển và nâng cao giá trị cá nhân trong ngành. 
+    Vì vậy, cần có một giải pháp minh bạch, khách quan và đáng tin cậy để xác thực trình độ của mỗi cá nhân, 
+    đồng thời giúp doanh nghiệp dễ dàng đánh giá năng lực của ứng viên một cách chính xác hơn.
+
+    Nhằm giải quyết vấn đề trên, \textbf{Hệ thống danh tiếng phục vụ xác thực hồ sơ và đánh giá kỹ năng} được phát triển dựa trên công nghệ blockchain, 
+    cung cấp một nền tảng giúp cá nhân có thể chứng minh năng lực của mình một cách minh bạch, công khai và không thể thay đổi. 
+    Hệ thống cho phép người dùng tham gia các thử thách để kiểm tra và chứng minh kỹ năng, đồng thời áp dụng cơ chế đánh giá phi tập trung để đảm bảo tính khách quan.
+
+    Thay vì chỉ dựa vào chứng chỉ hay lời khai của ứng viên, hệ thống này sẽ ghi nhận kết quả đánh giá lên blockchain và kho lưu trữ phi tập trung, 
+    giúp tạo ra một hồ sơ danh tiếng đáng tin cậy, có thể sử dụng trên nhiều nền tảng khác nhau. 
+    Cộng đồng chuyên gia và nhà tuyển dụng có thể tham gia vào quá trình đánh giá để đảm bảo chất lượng, 
+    đồng thời giúp thúc đẩy sự phát triển của một hệ sinh thái xác thực năng lực trong lĩnh vực Công nghệ thông tin.
     
     \subsection{Mục tiêu đề tài}
-    
-    %Phần này mô tả về động lực để giải quyết vấn đề. 
-    Thông tin về bối cảnh của đề tài. Cần trả lời các câu hỏi:
-    \begin{itemize}
-        \item Tại sao cần thực hiện đề tài này?
-        \item Đề tài mang lại được điều gì?
-        \item Ảnh hưởng và ý nghĩa có thể có của kết quả đối với vấn đề đã được đặt ra nói riêng và toàn bộ hướng nghiên cứu nói chung?
-    \end{itemize}
+
+    Mục tiêu của đề tài là xây dựng một hệ thống danh tiếng phi tập trung ứng dụng công nghệ blockchain để xác thực kỹ năng và hồ sơ cá nhân trong lĩnh vực Công nghệ thông tin. 
+    Hệ thống sẽ cung cấp một phương thức đánh giá minh bạch, khách quan và không thể thay đổi, giúp cá nhân chứng minh năng lực thực tế một cách đáng tin cậy, 
+    đồng thời hỗ trợ tổ chức và doanh nghiệp trong việc xác thực trình độ ứng viên.
+
+    Hệ thống hướng đến việc \textbf{tạo lập một môi trường đánh giá công bằng}, nơi mà năng lực của cá nhân được thể hiện thông qua kết quả thực tế, 
+    thay vì chỉ dựa vào chứng chỉ hoặc hồ sơ tự khai. Bên cạnh đó, việc ứng dụng blockchain giúp đảm bảo dữ liệu được bảo mật, 
+    minh bạch và có thể truy xuất dễ dàng, góp phần nâng cao độ tin cậy và hiệu quả trong quy trình tuyển dụng và đánh giá nhân sự.
+
+    Ngoài việc giải quyết bài toán xác thực hồ sơ, hệ thống còn tạo động lực để cá nhân \textbf{phát triển kỹ năng liên tục}, khi họ có thể tham gia các thử thách 
+    để cải thiện năng lực và nhận được sự công nhận từ cộng đồng. Với tiềm năng mở rộng, mô hình này có thể được áp dụng cho nhiều lĩnh vực khác, 
+    đóng góp vào xu hướng phát triển của các giải pháp phi tập trung trong tương lai.
     
     \subsection{Phạm vi của đề tài}
     
-    Nội dung nghiên cứu chính của đề tài. Các đối tượng nghiên cứu, thực thể liên quan, tập dữ liệu, ... có thể xuất hiện trong đề tài. Các giới hạn hoặc ràng buộc của đề tài. 
-    
+    Đề tài tập trung nghiên cứu và phát triển một hệ thống danh tiếng phi tập trung dựa trên blockchain để xác thực kỹ năng và hồ sơ cá nhân trong lĩnh vực Công nghệ thông tin. 
+    Hệ thống sẽ cung cấp một cơ chế minh bạch, khách quan nhằm đánh giá năng lực cá nhân dựa trên kết quả thực tế thay vì chỉ dựa vào chứng chỉ hoặc hồ sơ tự khai.
+
+    \subsubsection{Đối tượng nghiên cứu}
+    \begin{itemize}
+        \large
+        \item \textbf{Công nghệ blockchain} và ứng dụng trong hệ thống danh tiếng.
+        \item \textbf{Smart contract} để tự động hóa quy trình xác thực, đánh giá, truy vấn và lưu trữ.
+        \item \textbf{Kho lưu trữ phi tập trung} để lưu trữ nội dung thử thách và kết quả đánh giá.
+        \item \textbf{Cơ chế đánh giá phi tập trung} dựa trên sự tham gia của cộng đồng.
+        \item \textbf{Hệ thống quản lý danh tiếng} giúp cá nhân tích lũy điểm số và nâng cao uy tín.
+    \end{itemize}
+
+    \subsubsection{Thực thể liên quan}
+    \begin{itemize}
+        \large
+        \item \textbf{Người dùng:} bao gồm học sinh, sinh viên và người đi làm trong lĩnh vực Công nghệ thông tin, cũng như các tổ chức, doanh nghiệp có nhu cầu đánh giá kỹ năng của ứng viên hoặc nhân sự.
+        \item \textbf{Smart contract:} xử lý cơ chế đánh giá, chấm điểm, xác thực, truy vấn và lưu trữ dữ liệu trên blockchain.
+        \item \textbf{Hệ thống lưu trữ phi tập trung}: lưu trữ thông tin thử thách, kết quả đánh giá và hồ sơ người dùng.
+    \end{itemize}
+
+    \subsubsection{Tập dữ liệu}
+    \begin{itemize}
+        \large
+        \item \textbf{Danh sách thử thách:} bao gồm tiêu đề, mô tả, yêu cầu kỹ thuật...
+        \item \textbf{Danh sách giải pháp:} chứa một hoặc nhiều giải pháp cho một thử thách.
+        \item \textbf{Kết quả đánh giá:} bao gồm điểm số từ reviewer, nhận xét, bằng chứng thực hiện thử thách.
+        \item \textbf{Hồ sơ người dùng:} chứa lịch sử tham gia thử thách, tổng điểm uy tín.
+        \item \textbf{Thông tin giao dịch token:} phản ánh việc tham gia thử thách, đánh giá và trao thưởng.
+    \end{itemize}
+
+    \subsubsection{Giới hạn và ràng buộc của đề tài}
+    \begin{itemize}
+        \large
+        \item Chỉ tập trung vào lĩnh vực Công nghệ thông tin, chưa áp dụng cho các ngành khác.
+        \item Không đánh giá qua kinh nghiệm làm việc, chỉ dựa trên thử thách kỹ năng trên nền tảng này.
+        \item Phạm vi triển khai ban đầu sẽ giới hạn ở quy mô thử nghiệm, trước khi mở rộng áp dụng rộng rãi.
+    \end{itemize}
+
     \subsection{Cách tiếp cận dự kiến}
     
     %Có thể bổ sung hình ảnh vào để làm rõ phương pháp hoặc cách tiếp cận dự kiến.
