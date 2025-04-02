@@ -194,9 +194,9 @@
             Trong phần này, chúng tôi sẽ trình bày tổng quan những nghiên cứu đã được tiến hành theo hướng nghiên cứu của đề tài hệ thống danh tiếng (Reputation System), bao gồm những nghiên cứu trong nước và những nghiên cứu ngoài nước. 
             \par
             % Nghiên cứu trong nước
-            Đối với nghiên cứu trong nước, bài nghiên cứu "Quản Lý Định Danh Phi Tập Trung" của PGS.TS. Nguyễn Đình Thúc \cite{quan-ly-dinh-danh-phi-tap-trung} là xuất phát điểm quan trọng của đề tài. Ý tưởng chính của bài nghiên cứu là việc xây dựng một thống quản lý định danh số nơi người dùng (chủ thể định danh) có toàn quyền kiểm soát đối với thông tin định danh của mình, thay vì phụ thuộc vào các nhà cung cấp dịnh vụ (service provider). Bài nghiên cứu đã đề xuất việc sử dụng công nghệ chuỗi khối (blockchain) để xây dựng hệ thống định danh, bao gồm hai chủ thể chính: người dùng (chủ thể định danh) và nhà cung cấp dịnh vụ (service provider). Dữ liệu định danh của người dùng được lưu trữ cục bộ trên chính thiết bị của người dùng dưới dạng mã hóa và tham chiếu đến dữ liệu được lưu trên chuỗi khối (blockchain). Để quản lý dữ liệu mã hóa, cả chủ thể định danh và nhà cung cấp dịch vụ cần sử dụng giao thức tương tác DataTX. Chủ thể định danh có toàn quyền đối với dữ liệu của mình, có thể quản lý quyền truy cập thông qua giao thức tương tác AccessTx. 
+            Đối với nghiên cứu trong nước, bài nghiên cứu "Quản Lý Định Danh Phi Tập Trung" của PGS.TS. Nguyễn Đình Thúc \cite{quan-ly-dinh-danh-phi-tap-trung} là xuất phát điểm quan trọng của đề tài. Ý tưởng chính của bài nghiên cứu là việc xây dựng một hệ thống quản lý định danh số nơi người dùng (chủ thể định danh) có toàn quyền kiểm soát đối với thông tin định danh của mình, thay vì phụ thuộc vào các nhà cung cấp dịnh vụ (service provider). Bài nghiên cứu đã đề xuất việc sử dụng công nghệ chuỗi khối (blockchain) để xây dựng hệ thống định danh, bao gồm hai chủ thể chính: người dùng (chủ thể định danh) và nhà cung cấp dịnh vụ (service provider). Dữ liệu định danh của người dùng được lưu trữ cục bộ trên chính thiết bị của người dùng dưới dạng mã hóa và tham chiếu đến dữ liệu được lưu trên chuỗi khối (blockchain). Để quản lý dữ liệu mã hóa, cả chủ thể định danh và nhà cung cấp dịch vụ cần sử dụng giao thức tương tác DataTX. Chủ thể định danh có toàn quyền đối với dữ liệu của mình, có thể quản lý quyền truy cập thông qua giao thức tương tác AccessTx. 
             \par
-            Bài nghiên cứu cũng đã định nghĩa về danh tiếng (reputation), hay uy tín như sau: "Uy tín được hình thành và biến đổi qua những thành công hay thất bại thực thể khi thực thi các nhiệm vụ cụ thể" \cite{quan-ly-dinh-danh-phi-tap-trung,a-survey-of-trust-in-internet-applications}. Có thể hiểu rằng, danh tiếng không phải là thực thể bất biến, mà luôn thay đổi theo thời gian và từng ngữ cảnh cụ thể. Không chỉ dừng lại ở một khái niệm lý thuyết đơn thuần, bài nghiên cứu đã đề xuất một hướng tiếp cận cụ thể để tính toán và số hóa khái niệm trừu tượng này bằng cách dựa vào hành vi (behavior) của các Node trong mạng, bao gồm người dùng (chủ thể định danh) và nhà cung cấp dịch vụ (service provider). Niềm tin của một thực thể (Node) được thiết lập là "giá trị kỳ vọng về hành vi tốt của Node trong tương lai" \cite{quan-ly-dinh-danh-phi-tap-trung}. Kỳ vọng này chính là xác xuất \(p\) trong phân phối Bernoulli, được tính bằng cách đếm số hành động của Node để tính xấp xỉ xác suất. \cite{thong-ke-may-tinh,quan-ly-dinh-danh-phi-tap-trung} 
+            Bài nghiên cứu cũng đã định nghĩa về danh tiếng (reputation), hay uy tín như sau: "Uy tín được hình thành và biến đổi qua những thành công hay thất bại thực thể khi thực thi các nhiệm vụ cụ thể" \cite{quan-ly-dinh-danh-phi-tap-trung,a-survey-of-trust-in-internet-applications}. Có thể hiểu rằng, danh tiếng không phải là thực thể bất biến, mà luôn thay đổi theo thời gian và từng ngữ cảnh cụ thể. Không chỉ dừng lại ở một khái niệm lý thuyết đơn thuần, bài nghiên cứu đã đề xuất một hướng tiếp cận cụ thể để tính toán và số hóa khái niệm trừu tượng này bằng cách dựa vào hành vi (behavior) của các Node trong mạng, bao gồm người dùng (chủ thể định danh) và nhà cung cấp dịch vụ (service provider). Niềm tin của một thực thể (Node) được thiết lập là "giá trị kỳ vọng về hành vi tốt của Node trong tương lai" \cite{quan-ly-dinh-danh-phi-tap-trung}. Kỳ vọng này chính là xác suất \(p\) trong phân phối Bernoulli, được tính bằng cách đếm số hành động của Node để tính xấp xỉ xác suất. \cite{thong-ke-may-tinh,quan-ly-dinh-danh-phi-tap-trung} 
             \par
             % Nghiên cứu ngoài nước
             Đối với các nghiên cứu ngoài nước, chúng tôi đã tham khảo từ các bài báo của dự án Rebooting the Web Of Trust (RWOT) như Portable Reputation Toolkit Use Cases \cite{reputation-toolkit}, Design Considerations for Decentralized Reputation Systems \cite{reputation-design}, và Reputation Interpretation \cite{reputation-interpretation}. Các bài báo trên đã đưa ra một khuôn khổ khái niệm (conceptual framework) cơ bản cho một hệ thống danh tiếng, đặc biệt trong việc đánh giá kỹ năng của một cá nhân khi tham gia vào mạng. 
@@ -219,7 +219,7 @@
             Dựa vào ý tưởng từ các nghiên cứu và bài báo đã tiến hành theo hướng đề tài này, chúng tôi đã nghiên cứu và thiết kế kiến trúc sơ bộ của hệ thống như hình \ref{fig:architect}. Hệ thống sẽ bao gồm các chủ thể tương tác sau: 
             \begin{itemize}
                 \item \textit{Người đóng góp} (Contributor): Là những người dùng tạo các thử thách (Challenge), có trách nhiệm đóng góp ngân hàng thử thách của hệ thống.
-                \item \textit{Người kiểm duyệt} (Moderator): Là những người có trách nhiệm kiểm duyệt các thử thách do người đóng góp tạo ra, thực hiện phân loại, đánh giá, và kiểm định chất lượng của thử thách. Để trở thành người kiểm duyệt, người dùng phải thõa mãn các điều điện cụ thể được quy định bởi hệ thống. 
+                \item \textit{Người kiểm duyệt} (Moderator): Là những người có trách nhiệm kiểm duyệt các thử thách do người đóng góp tạo ra, thực hiện phân loại, đánh giá, và kiểm định chất lượng của thử thách. Để trở thành người kiểm duyệt, người dùng phải thỏa mãn các điều kiện cụ thể được quy định bởi hệ thống. 
                 \item \textit{Người dùng chung} (Talent): Là những người có nhu cầu xây dựng danh tiếng, có thể tìm kiếm các thử thách, tham gia và đưa ra các giải pháp (Solution) tương ứng.
                 \item \textit{Người đánh giá} (Reviewer): Là những người tham gia vào quá trình đánh giá giải pháp mà người dùng đưa ra cho một thử thách.
                 \item \textit{Phòng tuyển dụng của các công ty} (Companies' recruitment department): Là đội ngũ tuyển dụng của các công ty có nhu cầu tuyển dụng những ứng viên phù hợp.
@@ -235,20 +235,20 @@
             \begin{enumerate}[label=\textbf{\alph*.}]
                 \item \textbf{Các thành phần công nghệ chính:}
                 \begin{itemize}
-                    \item Blockchain: Sổ cái phi tập trung, có vai trò lưu trữ dữ liệu quan trong trên chuỗi (on-chain) như thông tin người dùng, danh sách thử thách, danh sách giải pháp, chỉ số danh tiếng, quyền truy cập vào dữ liệu của người dùng, \dots Dữ liệu có thể chứa các tham chiếu (CID) của các dữ liệu lưu ngoài chuỗi (off-chain). 
+                    \item Blockchain: Sổ cái phi tập trung, có vai trò lưu trữ dữ liệu quan trọng trên chuỗi (on-chain) như thông tin người dùng, danh sách thử thách, danh sách giải pháp, chỉ số danh tiếng, quyền truy cập vào dữ liệu của người dùng, \dots Dữ liệu có thể chứa các tham chiếu (CID) của các dữ liệu lưu ngoài chuỗi (off-chain). 
                     \item Smart Contract: Hợp đồng thông minh tương tác với blockchain để quản dữ liệu on-chain, đồng thời thực thi các tiến trình quan trọng như: tính toán chỉ số danh tiếng, cập nhật kết quả lưu trên chuỗi, thực hiện các biện pháp phạt theo quy ước. 
-                    \item Dịch vụ lưu trữ dữ liệu phi tập trung: Giải pháp lưu trữ phi tập trung dùng để lưu trữ dữ liệu người dùng, nội dung của các \textit{thử thách} (Challenge), các \textit{giải pháp} (Solution) của nó, và các dữ liệu lớn cần lưu trữ ngoài khối (off-chain).
+                    \item Dịch vụ lưu trữ dữ liệu phi tập trung: Giải pháp lưu trữ phi tập trung dùng để lưu trữ dữ liệu người dùng, nội dung của các \textit{thử thách} (Challenge), các \textit{giải pháp} (Solution) của nó, và các dữ liệu lớn cần lưu trữ ngoài chuỗi (off-chain).
                 \end{itemize}
                     
                 \item \textbf{Kịch bản tương tác giữa các chủ thể:}
                 \begin{itemize}
                     \item \textbf{Tạo thử thách:}
                     \begin{itemize}
-                        \item Người đóng góp (Contributor) tạo và đăng tải các thử thách lên hệ thống. Nội dung của thử thách được lưu trữ và chia sẽ thông qua giao thức IPFS.
+                        \item Người đóng góp (Contributor) tạo và đăng tải các thử thách lên hệ thống. Nội dung của thử thách được lưu trữ và chia sẻ thông qua giao thức IPFS.
                         \item Mỗi thử thách thuộc một trong các phân loại: Thuật toán (Algorithm), Phát triển phần mềm (Software Development), Thiết kế hệ thống (System Design), DevOps, An toàn thông tin (Cyber Security), Kỹ năng mềm (Soft skills), v.v
                         \item Hệ thống lưu nội dung của thử thách ở kho lưu dữ liệu phi tập trung thông qua IPFS. Smart Contract cập nhật danh sách các thử thách trên chuỗi chứa các CID tham chiếu đến nội dung của thử thách ở IPFS.  
-                        \item Các thử thách vừa tạo ở trạng thái chưa kiếm duyệt, cần phải thông qua ý kiến của những người kiếm duyệt (Moderator). 
-                        \item Sau giai đoạn kiếm duyệt, nếu thử thách đạt mức độ và được hội đồng tán thành sẽ chuyển sang trạng thái đã kiểm duyệt. Những người cần xây dựng danh tiếng có thể tham gia vào thử thách. 
+                        \item Các thử thách vừa tạo ở trạng thái chưa kiểm duyệt, cần phải thông qua ý kiến của những người kiểm duyệt (Moderator). 
+                        \item Sau giai đoạn kiểm duyệt, nếu thử thách đạt mức độ và được hội đồng tán thành sẽ chuyển sang trạng thái đã kiểm duyệt. Những người cần xây dựng danh tiếng có thể tham gia vào thử thách. 
                     \end{itemize}
 
                     \item \textbf{Kiểm duyệt thử thách:}
@@ -267,7 +267,7 @@
                         \item Smart Contract thu thập tất cả điểm số từ Reviewer, áp dụng thuật toán tính điểm để xác định số điểm cuối cùng.
                         \item Những Reviewer có điểm số gần với kết quả chính xác nhất sẽ nhận thêm token. Số lượng token đặt cược ban đầu càng lớn thì sẽ nhận lại càng nhiều. Reviewer có điểm số lệch xa với kết quả nhất (hoặc biên độ lệch vượt quá giới hạn đã quy định sẵn) sẽ bị phạt một lượng token dựa trên số token ban đầu đã đặt cược.  
                         \item Smart Contract sau đó cập nhật kết quả lên Blockchain để đảm bảo tính minh bạch và không thể chỉnh sửa.
-                        \item Điểm số của giải pháp sẽ làm thay đổi chỉ số danh danh tiếng của người dùng trong một lĩnh vực cụ thể.
+                        \item Điểm số của giải pháp sẽ làm thay đổi chỉ số danh tiếng của người dùng trong một lĩnh vực cụ thể.
                     \end{itemize} 
 
                     \item \textbf{Chỉnh sửa giải pháp và cải thiện điểm:}
@@ -329,7 +329,7 @@
             & Nguyễn Hải Tuyên \\
             \hline
             01/04/2025 
-            & Lập trình quản lý thông tin người dùng trong hệ thống, một người dùng cần đảm các thông tin như tên, email, mô tả, v.v. Cần đảm bảo tên người dùng là duy nhất trong hệ thống. Nghiên cứu xây dựng một hợp đồng thông minh quản lý thông tin của người dùng. Xây dựng kiểu dữ liệu User với các trường thông tin cần thiết. Đồng thời, nghiên cứu xây dựng các phương thức cần thiết cho việc truy vẫn, cập nhật và xóa dữ liệu. Tích hợp sử dụng dịch vụ lưu trữ phi tập trung như IPFS, Irys, Arweave, v.v đối với các dữ liệu lớn. Bên cạnh đó, sử dụng NextJS để xây dựng giao diện tương tác với người dùng. 
+            & Lập trình quản lý thông tin người dùng trong hệ thống, một người dùng cần đảm các thông tin như tên, email, mô tả, v.v. Cần đảm bảo tên người dùng là duy nhất trong hệ thống. Nghiên cứu xây dựng một hợp đồng thông minh quản lý thông tin của người dùng. Xây dựng kiểu dữ liệu User với các trường thông tin cần thiết. Đồng thời, nghiên cứu xây dựng các phương thức cần thiết cho việc truy vấn, cập nhật và xóa dữ liệu. Tích hợp sử dụng dịch vụ lưu trữ phi tập trung như IPFS, Irys, Arweave, v.v đối với các dữ liệu lớn. Bên cạnh đó, sử dụng NextJS để xây dựng giao diện tương tác với người dùng. 
             & Nguyễn Hải Tuyên \\
             \hline
             08/04/2025 
@@ -337,7 +337,7 @@
             & Trần Minh Đạt \\
             \hline
             15/04/2025 
-            & Hoàn thiện các chức năng của kiếm duyệt (Moderator) cho phép đọc dữ liệu và đánh giá. Xác định trường thông tin cần thiết mà người kiếm duyệt cần phải hoàn thiện trước khi nộp biểu quyết. Nghiên cứu và triển khai cơ chế tổng hợp ý kiến của tất cả những người kiểm duyệt. Xây dựng một công thức tính hiệu quả, xác định các trọng số phù hợp như chỉ số danh tiếng, v.v 
+            & Hoàn thiện các chức năng của kiểm duyệt (Moderator) cho phép đọc dữ liệu và đánh giá. Xác định trường thông tin cần thiết mà người kiểm duyệt cần phải hoàn thiện trước khi nộp biểu quyết. Nghiên cứu và triển khai cơ chế tổng hợp ý kiến của tất cả những người kiểm duyệt. Xây dựng một công thức tính hiệu quả, xác định các trọng số phù hợp như chỉ số danh tiếng, v.v 
             & Nguyễn Hải Tuyên \\
             \hline
             30/04/2025 
@@ -349,11 +349,11 @@
             & Nguyễn Hải Tuyên \\
             \hline
             20/05/2025 
-            & Hoàn thiện các chức năng của người đánh giá (Reviewer), cho phép họ xem chi tiết giải pháp khi tham gia vào không gian làm việc của người tạo ra giải pháp. Nghiên cứu xây dụng công thức tính số điểm cuối cùng tổng hợp từ các đánh giá của Reviewer, công thức phải tính đến các trọng số quan trọng như chỉ số danh tiếng của từng Reviewer. Nghiên cứu triển khai cơ chế đặt cược, thưởng và phạt sau khi tổng hợp được kết quả cuối cùng.  
+            & Hoàn thiện các chức năng của người đánh giá (Reviewer), cho phép họ xem chi tiết giải pháp khi tham gia vào không gian làm việc của người tạo ra giải pháp. Nghiên cứu xây dựng công thức tính số điểm cuối cùng tổng hợp từ các đánh giá của Reviewer, công thức phải tính đến các trọng số quan trọng như chỉ số danh tiếng của từng Reviewer. Nghiên cứu triển khai cơ chế đặt cược, thưởng và phạt sau khi tổng hợp được kết quả cuối cùng.  
             & Trần Minh Đạt \\
             \hline
             01/06/2025 
-            & Hoàn thiện chức năng của các phòng tuyển dụng của các công ty, cho phép họ tìm kiếm hồ sơ của người dùng. Xác định những thông tin nào được công khai theo mắc định, những thông tin nào cần phải có sự đồng ý của người dùng mới có thể truy cập. Nghiên cứu cơ chế trả phí khi các phòng tuyền dụng xác nhận tuyển ứng cử viên.  
+            & Hoàn thiện chức năng của các phòng tuyển dụng của các công ty, cho phép họ tìm kiếm hồ sơ của người dùng. Xác định những thông tin nào được công khai theo mặc định, những thông tin nào cần phải có sự đồng ý của người dùng mới có thể truy cập. Nghiên cứu cơ chế trả phí khi các phòng tuyển dụng xác nhận tuyển ứng cử viên.  
             & Nguyễn Hải Tuyên \\
             \hline
             20/06/2025 
