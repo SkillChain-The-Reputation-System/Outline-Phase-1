@@ -5,22 +5,26 @@
 %Liên hệ về mẫu LaTEX này: Thầy Bùi Huy Thông (bhthong@fit.hcmus.edu.vn)
 
 \documentclass{article}[14pt]
-\usepackage[utf8]{vietnam}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\usepackage[vietnamese]{babel}
 \usepackage{enumerate}
 \usepackage{enumitem}
 \usepackage{multicol}
 \usepackage{listings}
-\usepackage[left=2cm,right=2cm,top=2.5cm,bottom=2.5cm]{geometry}
+\usepackage[left=2.5cm,right=2.5cm,top=3cm,bottom=3.5cm]{geometry}
 \usepackage{verbatim}
 \usepackage{graphicx}
 \usepackage{url}
 \usepackage{fancyhdr}
 \usepackage{fancybox,framed}
-\linespread{1.3}
+\usepackage[absolute,overlay]{textpos}
+\usepackage{setspace}
+\onehalfspacing
 \usepackage{lastpage}
 \usepackage{floatrow}
 \usepackage{array}
-\pagenumbering{arabic}
+\pagenumbering{gobble}
 %\pagestyle{fancy}
 \newfloatcommand{capbtabbox}{table}[][\FBwidth]
 
@@ -97,8 +101,8 @@
 
           %Thể hiện dạng: <Họ và tên sinh viên> (MSSV: )
           \begin{enumerate}
-              \item Nguyễn Hải Tuyên (MSSV: 21127474)
-              \item Trần Minh Đạt (MSSV: 21127570)
+              \item Nguyễn Hải Tuyên (MSSV : 21127474)
+              \item Trần Minh Đạt (MSSV : 21127570)
           \end{enumerate}
 
           %Chọn loại thích hợp
@@ -236,7 +240,7 @@
       \item \textit{Phòng tuyển dụng của các công ty}: Là đội ngũ tuyển dụng của các công ty có nhu cầu tuyển dụng những ứng viên phù hợp.
   \end{itemize}
 
-  \begin{figure} [h!]
+  \begin{figure} [h]
       \centering
       \includegraphics[width=0.97\textwidth]{images/prototype-v1.1.png}
       \caption{Sơ đồ hoạt động hệ thống dự kiến}
@@ -378,21 +382,31 @@
 \bibliographystyle{ieeetr}
 \bibliography{reference}
 
+\bigskip
+
 \begin{center}
     \begin{tabular}{ p{7cm} p{7cm} }
         \textbf{
             \begin{tabular}[c]{@{}c@{}}                  \\
-                \normalsize XÁC NHẬN CỦA GVHD \\
-                \textit{\normalsize(Ký và ghi rõ họ tên)}
+                \large XÁC NHẬN CỦA GVHD \\
+                \textit{\large(Ký và ghi rõ họ tên)}
             \end{tabular}
         }
          & \textbf{
             \begin{tabular}[c]{@{}c@{}}
-                \textit{\normalsize Tp. Hồ Chí Minh, ngày... tháng... năm...} \\
-                \normalsize NHÓM SINH VIÊN THỰC HIỆN                          \\
-                \textit{\normalsize(Ký và ghi rõ họ tên)}\end{tabular}
+                \textit{\large Tp. Hồ Chí Minh, ngày 14 tháng 9 năm 2025} \\
+                \large NHÓM SINH VIÊN THỰC HIỆN                          \\
+                \textit{\large(Ký và ghi rõ họ tên)}\end{tabular}
         }
     \end{tabular}
 \end{center}
+
+\begin{textblock*}{7cm}(2.8cm,22.5cm) % (x,y) từ góc trên trái
+  \includegraphics[width=7cm]{advisor_signature.jpg}
+\end{textblock*}
+
+\begin{textblock*}{9.5cm}(10.2cm,22.5cm) % (x,y) từ góc trên trái
+  \includegraphics[width=9.5cm]{students_signature.jpg}
+\end{textblock*}
 
 \end{document}
